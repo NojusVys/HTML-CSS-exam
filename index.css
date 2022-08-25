@@ -55,6 +55,7 @@ code {
 .burger {
     display: none;
     cursor: pointer;
+    padding-right: 3vw;
 }
 .burger .bar {
     display: block;
