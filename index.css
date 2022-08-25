@@ -1,21 +1,8 @@
-code {
-    border: 3px black dotted;
-    color: black;
-    background-color: white;
-    text-shadow: 2px 2px black;
-    font-size: 15px;
-    width: 40vw;
-    margin: 0 0;
-}
-
 * {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     padding: 0;
-    margin: 0;
     text-decoration: none;
-    /* list-style: none;
-    box-sizing: border-box; */
 }
 
 .navi {
@@ -24,7 +11,7 @@ code {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    position: fixed;
+    padding-top: 30px;
 }
 .navi .logo {
     padding-left: 3vw;
@@ -36,7 +23,7 @@ code {
     justify-content: flex-end;
     padding-right: 3vw;
     padding-top: 1vw;
-    width: 35%;
+    width: 40%;
 }
 
 .navi .menuButtons {
@@ -45,11 +32,12 @@ code {
 
 .navi .menu a {
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #555555;
 }
-.navi .menu .pinkA {
-    color: #ff3998;
+
+.pinkA {
+    color: #ff3998 !important;
 }
 
 .burger {
@@ -67,7 +55,89 @@ code {
     border-radius: 3px;
 }
 
-@media (max-width: 768px) {
+.content1 {
+    margin: 7vh 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#bigBold {
+    padding: 2vh 0;
+    font-weight: bolder;
+    font-size: 5rem;
+}
+
+.texty {
+    color: #555555;
+    font-size: 1.75rem;
+}
+
+.blockWords {
+    display: block;
+    padding-left: 3vw;
+    width: 700px;
+    position: absolute;
+    margin-right: 10vw;
+}
+
+.robo {
+    overflow: hidden;
+    justify-content: flex-end;
+    position: relative;
+    left: 55%;
+}
+
+.button {
+    display: flex;
+    font-size: 2rem;
+    margin: 3.5vh 1.5vw;
+    padding: 4px 4px;
+    width: 15rem;
+    height: 4.5rem;
+    left: 20%;
+    text-align: center;
+    background-image: url("assets/background.svg");
+    background-size: cover;
+    border-radius: 70px;
+}
+
+.button a {
+    text-decoration: none;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    width: 100%;
+    height: 100%;
+}
+
+.button a:hover {
+    background-color: dodgerblue;
+}
+
+.bird {
+    background-image: url("assets/background.svg");
+    background-size: cover;
+    width: 95%;
+    margin-left: 2.5%;
+    height: 400px;
+    position: absolute;
+    border-radius: 30px;
+}
+
+.bird h1 {
+    padding: 5px 40px;
+    font-size: 40px;
+    margin: 0;
+}
+
+.bird p {
+    font-size: 25px;
+    padding: 5px 40px;
+}
+
+@media only screen and (max-width: 768px) {
     .burger {
         display: block;
     }
@@ -75,4 +145,19 @@ code {
     .menu {
         opacity: 0%;
     }
-} /*# sourceMappingURL=index.css.map */
+
+    .blockWords {
+        width: 500px;
+    }
+
+    .bird {
+        width: 768px;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .bird h1,
+    .bird p {
+        left: 300px;
+    }
+}
