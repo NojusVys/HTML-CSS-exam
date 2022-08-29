@@ -13,7 +13,7 @@
     width: 100%;
     padding-top: 30px;
 }
-.navi .logo {
+.navi .logo1 {
     padding-left: 3vw;
     padding-top: 1vw;
     width: 30%;
@@ -231,6 +231,57 @@
     margin-right: 10vw;
 }
 
+footer {
+    margin: 100px 3vw;
+    display: flex;
+}
+
+.textb {
+    font-size: 1.1rem;
+    color: #555555;
+}
+
+.brand .logo2 img {
+    width: 200px !important;
+}
+
+.brand img {
+    width: 1.5rem;
+    gap: 15px;
+}
+
+.textB {
+    color: #555555;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.textBox {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: 50vw;
+}
+
+.lowerText {
+    width: 300px;
+    display: block;
+}
+
+.lowerText a {
+    display: block;
+    margin-top: 7px;
+    text-decoration: none;
+}
+
+.legal {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #555555;
+}
+
 @media only screen and (max-width: 768px) {
     .burger {
         display: block;
@@ -245,7 +296,7 @@
     }
 
     .blockWords1 {
-        width: 450px;
+        width: 500px;
     }
 
     .bird {
@@ -282,5 +333,21 @@
 
     .greenW {
         margin-top: 320px;
+    }
+
+    footer {
+        display: block;
+    }
+
+    .flexText {
+        width: 50%;
+    }
+
+    .textBox {
+        left: 0;
+    }
+
+    .soon {
+        display: none;
     }
 }
