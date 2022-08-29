@@ -59,6 +59,7 @@
     margin: 7vh 0;
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
 }
 
 .bigBold {
@@ -146,9 +147,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: nowrap;
-    /* position: absolute; */
     padding-left: 30px;
-    /* gap: 50px; */
 }
 
 #under {
@@ -203,6 +202,35 @@
     height: 15px;
 }
 
+.blank {
+    height: 150px;
+}
+
+.content2 {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.greenW {
+    overflow: hidden;
+    justify-content: flex-end;
+    position: relative;
+    left: 70%;
+    margin-top: 180px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.blockWords1 {
+    display: block;
+    padding-left: 3vw;
+    width: 700px;
+    position: absolute;
+    margin-right: 10vw;
+}
+
 @media only screen and (max-width: 768px) {
     .burger {
         display: block;
@@ -214,6 +242,10 @@
 
     .blockWords {
         width: 500px;
+    }
+
+    .blockWords1 {
+        width: 450px;
     }
 
     .bird {
@@ -242,5 +274,13 @@
     .auction {
         gap: 50px;
         position: absolute;
+    }
+
+    .blank {
+        height: 400px;
+    }
+
+    .greenW {
+        margin-top: 320px;
     }
 }
